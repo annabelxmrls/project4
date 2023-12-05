@@ -9,8 +9,9 @@
 <body>
     <div class="container">
         <h1>Culinary Roulette</h1>
-        <p>Are you tired of making the same meal over and over again but have trouble finding new recipes? Welcome to Culinary Roulette, the web app where you can quickly find a new and random recipe based on one of the three categories we offer: beef, chicken, and vegetarian! Try it out below by first selecting a category and click "Generate Recipe".</p>
+        <p>Are you tired of making the same meal over and over again but have trouble figuring out something new to cook? Welcome to Culinary Roulette, the web app where you can quickly find a new and random recipe based on one of the six categories we offer: beef, chicken, seafood, vegetarian, vegan, and dessert! Try it out below by first selecting a category and click "Find Random Recipe". You can keep clicking the button and change the category until you find a recipe that's right for you!</p>
 
+        <div class="buttons-container">
         <label id="category-menu">Select a recipe category:</label>
         <select id="category">
             <option value="beef">Beef</option>
@@ -21,9 +22,11 @@
             <option value="dessert">Dessert</option>
         </select>
         
-        <button onclick="selectCategory()">Generate Random Recipe</button>
-        <div id="recipe-display"></div>
+        <button onclick="selectCategory()">Find Random Recipe</button>
     </div>
+        <div id="recipe-display">A new recipe will appear here once you click the green button above!</div>
+    </div>
+    
 
     <script src="js/main.js"></script>
 </body>
