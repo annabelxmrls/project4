@@ -29,11 +29,15 @@ function displayRecipe(recipeId) {
         const recipeDisplay = document.getElementById('recipe-display');
         recipeDisplay.innerHTML = `
         <h2>${recipe.strMeal}</h2>
+        <div class="recipe-flex">
         <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}">
+        <div class="recipe-block">
         <h3>Ingredients</h3>
         <ul>${displayIngredients(recipe)}</ul>
+        </div>
+        </div>
         <h3>Instructions</h3>
-        <p>${recipe.strInstructions}</p>`;
+        <p class="instructions">${recipe.strInstructions}</p>`;
     })
     .catch(error => 
         console.error('There has been an error on getting recipe data.', error));
