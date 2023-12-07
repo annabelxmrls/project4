@@ -94,7 +94,7 @@ img {
     max-width: 100%;
 }
 
-.instructions {
+.instructions, ul {
     text-align: left;
 }
 
