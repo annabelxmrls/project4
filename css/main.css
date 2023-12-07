@@ -71,11 +71,13 @@ button {
 select:hover {
     background-color: rgba(154, 171, 154, 0.187);
     border: solid rgb(141, 155, 141) 2px;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: rgb(45, 114, 70);
     border: solid rgb(17, 70, 17) 2px;
+    cursor: pointer;
 }
 
 /* recipe display */
